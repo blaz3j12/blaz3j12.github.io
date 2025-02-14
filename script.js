@@ -63,72 +63,72 @@ function nextStep(answer) {
 
 function handleFirstStep(answer) {
     currentStep = 1;
-    questionElement.textContent = "Którego dnia w 2023r. się poznaliśmy?";
+    questionElement.textContent = "Jak nazywa się największy ocean na Ziemi?";
     clearAnswers();
-    createAnswers(['24.11', '29.11', '26.11'], [handleSecondStep, handleSecondStep, handleSecondStep], 0);
+    createAnswers(['Atlantycki', 'Indyjski', 'Spokojny'], [handleSecondStep, handleSecondStep, handleSecondStep], 2); // Poprawna odpowiedź: Spokojny
 }
 
 function handleSecondStep(answer) {
     currentStep = 2;
-    questionElement.textContent = "Ile kotów początkowo mieliśmy mieć?";
+    questionElement.textContent = "Który pierwiastek chemiczny ma symbol 'O'?";
     clearAnswers();
-    createAnswers(['6 kotków', '10 kotków', '8 kotków'], [handleThirdStep, handleThirdStep, handleThirdStep], 1);
+    createAnswers(['Żelazo', 'Tlen', 'Złoto'], [handleThirdStep, handleThirdStep, handleThirdStep], 1); // Poprawna odpowiedź: Tlen
 }
 
 function handleThirdStep(answer) {
     currentStep = 3;
-    questionElement.textContent = "W ilu miastach byliśmy?";
+    questionElement.textContent = "Kto wynalazł żarówkę?";
     clearAnswers();
-    createAnswers(['W 8 miastach', 'W 5 miastach', 'W 7 miastach'], [handleFourthStep, handleFourthStep, handleFourthStep], 2);
+    createAnswers(['Thomas Edison', 'Nikola Tesla', 'Albert Einstein'], [handleFourthStep, handleFourthStep, handleFourthStep], 0); // Poprawna odpowiedź: Thomas Edison
 }
 
 function handleFourthStep(answer) {
     currentStep = 4;
-    questionElement.textContent = "Co było pierwsze?";
+    questionElement.textContent = "Ile wynosi pierwiastek kwadratowy z 64?";
     clearAnswers();
-    createAnswers(['Złapanie się za ręce', 'Pocałunek', 'Wyznanie miłości'], [handleFifthStep, handleFifthStep, handleFifthStep], 3);
+    createAnswers(['6', '8', '10'], [handleFifthStep, handleFifthStep, handleFifthStep], 1); // Poprawna odpowiedź: 8
 }
 
 function handleFifthStep(answer) {
     currentStep = 5;
-    questionElement.textContent = "Kiedy pierwszy raz byłem w brodnicy?";
+    questionElement.textContent = "Jaka jest stolica Francji?";
     clearAnswers();
-    createAnswers(['09.12', '29.12', 'Ferie 2024'], [handleSixthStep, handleSixthStep, handleSixthStep], 4);
+    createAnswers(['Berlin', 'Paryż', 'Madryt'], [handleSixthStep, handleSixthStep, handleSixthStep], 1); // Poprawna odpowiedź: Paryż
 }
 
 function handleSixthStep(answer) {
     currentStep = 6;
-    questionElement.textContent = "Jak długo jesteśmy razem?";
+    questionElement.textContent = "Które zwierzę jest najszybsze na Ziemi?";
     clearAnswers();
-    createAnswers(['Rok, miesiąc i 21 dni', 'Rok, miesiąc i 18 dni', 'Rok, miesiąc i 16 dni'], [handleSeventhStep, handleSeventhStep, handleSeventhStep], 5);
+    createAnswers(['Gepard', 'Struś', 'Orzeł'], [handleSeventhStep, handleSeventhStep, handleSeventhStep], 0); // Poprawna odpowiedź: Gepard
 }
 
 function handleSeventhStep(answer) {
     currentStep = 7;
-    questionElement.textContent = "Gdzie oznaczyłem cię na zdjeciu na instagramie?";
+    questionElement.textContent = "Ile wynosi 2 + 2 * 2?";
     clearAnswers();
-    createAnswers(['W Wiśle', 'Na twojej twarzy', 'Na śniegu'], [handleEighthStep, handleEighthStep, handleEighthStep], 6);
+    createAnswers(['6', '8', '4'], [handleEighthStep, handleEighthStep, handleEighthStep], 0); // Poprawna odpowiedź: 6
 }
 
 function handleEighthStep(answer) {
     currentStep = 8;
-    questionElement.textContent = "Pierwsze wspólne zdjęcie?";
+    questionElement.textContent = "Kto napisał 'Romeo i Julia'?";
     clearAnswers();
-    createAnswers(['W meblowym', 'Na rynku', 'Na brzegu'], [handleNinthStep, handleNinthStep, handleNinthStep], 7);
+    createAnswers(['William Szekspir', 'Charles Dickens', 'Mark Twain'], [handleNinthStep, handleNinthStep, handleNinthStep], 0); // Poprawna odpowiedź: William Szekspir
 }
 
 function handleNinthStep(answer) {
     currentStep = 9;
-    questionElement.textContent = "Jak bardzo mi się spodobała?";
+    questionElement.textContent = "Ile planet znajduje się w Układzie Słonecznym?";
     clearAnswers();
-    createAnswers(['Bardzo', 'W ogóle', 'BARDZOASJBIUBEUI'], [handleTenthStep, handleTenthStep, handleTenthStep], 8);
+    createAnswers(['7', '8', '9'], [handleTenthStep, handleTenthStep, handleTenthStep], 1); // Poprawna odpowiedź: 8
 }
 
 function handleTenthStep(answer) {
     currentStep = 10;
-    questionElement.textContent = "Chcesz zostać moja walentynką?";
+    questionElement.textContent = "Chcesz zostać moją walentynką?";
     clearAnswers();
-    createAnswers(['Tak', 'Nie'], [showGif, shrinkNoButton], 9);
+    createAnswers(['Tak', 'Nie'], [showGif, shrinkNoButton], 0); // Poprawna odpowiedź: Tak
 }
 
 let noClickedcount = 0;
