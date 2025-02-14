@@ -160,8 +160,7 @@ function clearAnswers() {
 
 function checkAnswer(questionIndex, selectedAnswerText) {
     const correctAnswersText = [
-        '24.11', '8 kotków', 'W 7 miastach', 'Wyznanie miłości', '09.12',
-        'Rok, miesiąc i 16 dni', 'W Wiśle', 'W meblowym', 'BARDZOASJBIUBEUI', 'Tak'
+        'Spokojny','Tlen','Thomas Edison','8','Paryż','Gepard','6','William Szekspir','8','Tak'
     ];
 
     const correctAnswer = correctAnswersText[questionIndex].trim().toLowerCase();
