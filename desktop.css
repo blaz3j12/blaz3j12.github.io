@@ -269,6 +269,20 @@ h1 {
     background-color: #3e8e41;
 }
 
+.popy {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#popy {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 .fixed-button.left {
     position: fixed;
     top: 10px;
@@ -302,6 +316,17 @@ h1 {
     height: 55px;
     overflow: hidden;
     border: 2px solid rgb(61, 113, 35);
+}
+
+#eloImage {
+    position: fixed;
+    top: 20px;    
+    right: 270px;    
+    width: 100px;   
+    height: auto;    
+    z-index: 1000;  
+    display: none;  
+    user-select: none;
 }
 
 #pow {
@@ -373,10 +398,10 @@ h1 {
     z-index: 1000;
     user-select: none;
     position: fixed;
-    height: 45px;
+    height: 40px;
     top: -2px;
     right: -3px;
-    padding: 10px 130px;
+    padding: 10px 120px;
     background-color: transparent;
     border-radius: 5px;
     overflow: hidden;
