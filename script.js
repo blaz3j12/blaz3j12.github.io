@@ -254,17 +254,17 @@ function showGif() {
         gif.src = 'image.gif';
         soundFile = 'happy-cat.mp3';
         volumeLevel = 0.005;
-        ost.textContent = "YEYEYE 10/10 PUNKTÓW, BRAWOOO";
+        ost.textContent = "10/10 PUNKTÓW, BRAWOOO";
     } else if (points > 4) {
         gif.src = 'cat.gif';
         soundFile = 'cat-meow.mp3';
         volumeLevel = 0.008;
-        ost.textContent = "Pipeczka zdobyła bardzo dużo punktów hyhy";
+        ost.textContent = "Bardzo dużo punktów";
     } else {
         gif.src = 'banana.gif';
         soundFile = 'cry-banana-cat.mp3';
         volumeLevel = 0.01;
-        ost.textContent = "O nieee pipkooo, ale nic się nie stało, możesz kliknąć powrót";
+        ost.textContent = "Nic się nie stało, możesz kliknąć powrót";
     }
 
     gif.alt = 'Odpowiedni GIF';
@@ -307,7 +307,7 @@ function hideElementsAfterMessage() {
     gifcontainer.style.display = "none";
     inputContainer.style.display = "none";
     muteButton.style.display = "none";
-    ost.textContent = "A oto wiadomość moja do ciebie kruszynko";
+    ost.textContent = "A oto moja wiadomość";
     wiad.style.display = "none"
     point.style.display = "none"
     const screenWidth = window.innerWidth;
